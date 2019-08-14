@@ -1,9 +1,10 @@
 const Sequelize = require("sequelize");
 
 // Option 1: Passing parameters separately
-module.exports = new Sequelize("SequelizeTest", "sa", "marlon", {
+module.exports = new Sequelize("test", "sa", "marlon", {
   host: "localhost",
   dialect: "mssql",
+  port: "1433",
   // user: "sa",
   // password: "marlon",
   // server: "A2I-STUDENT",
